@@ -1,4 +1,15 @@
 require "rails_helper"
+
+RSpec.describe 'As a Visitor' do
+    describe 'When I visit "/parents"' do
+        before :each do
+            @garden_one = Garden
+        end
+        it 'I see the name of each parent record in the system' do
+            
+        end
+    end
+end
 #################################################
 # [ ] done
 
