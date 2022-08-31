@@ -11,5 +11,4 @@ Rails.application.routes.draw do
   post '/gardens', to: 'gardens#create'
   delete '/gardens/:id', to: 'gardens#destroy'
 
-
 end
