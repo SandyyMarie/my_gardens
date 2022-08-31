@@ -16,14 +16,12 @@ ActiveRecord::Schema.define(version: 2022_08_30_214613) do
   enable_extension "plpgsql"
 
   create_table "gardens", force: :cascade do |t|
-    t.integer "garden_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string "garden_name"
   end
 
   create_table "plants", force: :cascade do |t|
-    t.integer "plant_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "watered"

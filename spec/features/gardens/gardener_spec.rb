@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe 'As a Visitor' do
-    describe 'When I visit "/parents"' do
+    describe 'When I visit "/gardens"' do #parent
         before :each do
             @garden_one = Garden
         end

@@ -1,3 +1,3 @@
-class Plant < ApplicationController
-    
+class Plant < ApplicationRecord
+
 end
