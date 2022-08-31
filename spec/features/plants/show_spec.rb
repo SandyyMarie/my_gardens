@@ -16,5 +16,9 @@ RSpec.describe 'the Plants show page' do
         expect(page).to_not have_content(@plant2.plant_pet_name)
     end
 
-    it 'displays the plant pet name' #will come back
+    it 'displays the garden the plant belongs to' do#will come back do
+        visit "/plants/#{@plant1.plant_pet_name}"
+        save_and_open_page
+        expect(page).to have_content(@sandy_garden_1.garden_name)
+    end
 end

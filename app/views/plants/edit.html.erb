@@ -1,0 +1,5 @@
+<%= form_with url: "/plants/#{@plant.id}", method: :patch, local: true do |form| %>
+  <%= form.label :plant_pet_name %>
+  <%= form.text_field :plant_pet_name %>
+  <%= form.submit 'Update Plant Pet Name' %>
+<% end %>
