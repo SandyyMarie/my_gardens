@@ -3,7 +3,9 @@ require "rails_helper"
 RSpec.describe 'As a Visitor' do
     describe 'When I visit "/gardens"' do #parent
         before :each do
-            @garden_one = Garden
+            @indoor_garden = Garden.create!(garden_name: "Living Room Oasis")
+            @outdoor_garden = Garden.create!(garden_name: "Faerie Garden")
+
         end
         it 'I see the name of each parent record in the system' do
             
