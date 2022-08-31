@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_30_214613) do
+ActiveRecord::Schema.define(version: 2022_08_31_022000) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,7 +30,9 @@ ActiveRecord::Schema.define(version: 2022_08_30_214613) do
     t.string "plant_species"
     t.string "plant_pet_name"
     t.integer "sun_rating"
-    t.integer "assigned_garden"
+    t.bigint "garden_id"
+    t.index ["garden_id"], name: "index_plants_on_garden_id"
   end
 
+  add_foreign_key "plants", "gardens"
 end

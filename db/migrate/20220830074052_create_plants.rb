@@ -6,7 +6,6 @@ class CreatePlants < ActiveRecord::Migration[5.2]
       t.string :plant_species
       t.string :plant_pet_name
       t.integer :sun_rating
-      t.integer :assigned_garden
     end
   end
 end
