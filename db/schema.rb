@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2022_08_30_214613) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "garden_name"
+    t.boolean "indoor"
+    t.integer "times_watered"
   end
 
   create_table "plants", force: :cascade do |t|
@@ -27,7 +29,7 @@ ActiveRecord::Schema.define(version: 2022_08_30_214613) do
     t.boolean "watered"
     t.string "plant_species"
     t.string "plant_pet_name"
-    t.string "sun_rating"
+    t.integer "sun_rating"
     t.integer "assigned_garden"
   end
 
